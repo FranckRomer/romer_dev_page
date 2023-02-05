@@ -1,0 +1,119 @@
+.body{
+    min-height: 100vh;
+    background: linear-gradient(107.56deg, #343434 0%, #000000 100%);
+    padding: 3rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header_logos{
+    display: flex;
+    gap: 1rem;
+}
+.header_links{
+    display: flex;
+    gap: 3rem;
+}
+/* 
+    ? ----------------- Main -----------------
+*/
+.main{
+    margin-top: 3rem;
+}
+.titulo{
+    font-size: 3em;
+    text-align: center;
+}
+.subtitulo{
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    margin: 2rem;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 70vh;
+    /* border: 1px solid aliceblue; */
+}
+/* *---------------- Formulario -------------------- */
+.formulario{
+    display: grid;
+    /* width: 350px; */
+    margin: auto;
+    row-gap: 3rem;
+    padding: 3rem;
+    padding: 3rem 4rem;
+    border: 1px solid #00B7D4;
+    /* border-color: linear-gradient(214.78deg, #00B7D4 0%, #111111 100%); */
+    border-radius: 1rem;
+}
+.formulario input{
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #f1f1f1;
+}
+.formulario textarea{
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    min-height: 12rem;
+    border: 1px solid #f1f1f1;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.formulario button{
+    width: 180px;
+    margin: auto;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.formulario button:hover{
+    border-color: #00B7D4;
+}
+/* *---------------- Info -------------------- */
+.info{
+    display: grid;
+    margin: auto;
+    row-gap: 3rem;
+    padding: 2rem;
+}
+.info_msg{
+    font-size: 2em;
+    text-align: justify;
+}
+.nombre{
+    display: flex;
+    font-size: 2rem;
+    font-style: italic;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.redes{
+    display: grid;
+    row-gap: 3rem;
+}
+.redes h1{
+    font-size: 1.5rem;
+}
+.redes_iconos{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.redsocial{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}

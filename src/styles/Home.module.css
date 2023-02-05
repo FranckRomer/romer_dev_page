@@ -1,0 +1,249 @@
+/* 
+    * -------------- Header --------------
+*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin: 3rem; */
+  padding: 3.5vh 10vw;
+}
+
+.header_menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.header_menu a:hover {
+  border-bottom: 1px solid aliceblue;
+}
+
+/* 
+  ? -------------- Main --------------
+*/
+
+.main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.main h1 {
+  font-size: 3rem;
+}
+
+.main p {
+  font-size: 1.5rem;
+}
+
+.main section {
+  scroll-snap-align: start;
+  /* border: 1px solid red; */
+}
+
+
+
+/* * -------- Portada -------- */
+.portada {
+  min-height: 100vh;
+  background: linear-gradient(107.56deg, #2F3F80 0%, #165069 100%);
+  padding: 3rem;
+}
+
+.portada_main {
+  height: 80vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 50%;
+  margin-top: 3rem;
+  /* border: 1px solid red;| */
+}
+
+.portada_imgs,
+.portada_info {
+  /* min-height: 75vh; */
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: auto;
+}
+.portada_info {
+  row-gap: 3rem;
+  grid-template-columns: 1fr;
+}
+
+.portada_info_tituloPrin {
+  font-size: 3rem;
+  text-align: center;
+  object-position: center;
+  margin: 3rem 0;
+}
+
+.portada_info_contacto {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all .6s;
+}
+
+.portada_info_contacto p {
+  border: 3px solid #E57272;
+  border-radius: 8px;
+  color: #E57272;
+  font-size: 2rem;
+  padding: 1.8rem;
+}
+
+.portada_info_contacto:hover {
+  filter: invert(1);
+  /* filter: saturate(1); */
+  zoom: 1.01;
+}
+
+/* * -------- Datos -------- */
+.datos {
+  min-height: 100vh;
+  background: linear-gradient(107.56deg, #A950A1 0%, #4D1D48 100%);
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.datos_info {
+  /* width: 90vh; */
+  /* text-align: center; */
+  width: 70%;
+  display: inline;
+  grid-template-columns: 1fr;
+  align-items: center;
+  row-gap: 3rem;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.datos_info p {
+  text-align: justify;
+  margin: 3rem 0;
+}
+
+.datos_img {
+  /* border: 1px solid red; */
+  display: grid;
+  margin: auto;
+}
+
+/* * -------- Desarrollo -------- */
+.desarrollo {
+  min-height: 100vh;
+  /* background: linear-gradient(107.56deg, #2F3F80 0%, #165069 100%); */
+  /* background: linear-gradient(107.56deg, #008DA4 0%, #161569 100%); */
+  background: linear-gradient(107.56deg, #4D1D48 0%, #161569 100%);
+}
+
+.desarrollo_web,
+.desarrollo_responsive,
+.desarrollo_automatizacion {
+  min-height: 100vh;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  /* margin: auto; */
+}
+
+.desarrollo_web_info,
+.desarrollo_responsive_info,
+.desarrollo_automatizacion_info {
+  width: 70%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.desarrollo p{
+  text-align: justify;
+  margin: 3rem 0;
+}
+.desarrollo_web_img, .desarrollo_responsive_img,.desarrollo_automatizacion_img {
+  /* border: 1px solid red; */
+  display: grid;
+  margin: auto;
+}
+
+/* * -------- final -------- */
+.final {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2F3F80 0%, #111111 100%);
+  padding: 15vh 5rem;
+}
+.final h1{
+  text-align: center;
+}
+.final_grid{
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  margin: 3rem;
+}
+.final_img{
+  display: grid;
+  margin: auto;
+}
+.final_info{
+  display: grid;
+}
+.final_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.final_portfolio{
+  border: 3px solid #00B7D4;
+  color: #00B7D4;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+}
+.final_contacto{
+  border: 3px solid #E57272;
+  color: #E57272;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+
+}
+
+
+/* 
+    ! -------------- Responsive --------------
+*/
+
+
+@media only screen and (max-width: 1025px) {
+  .header {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header_menu {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 450) {
+  .header_contacto_contain {
+      width: 120px;
+      background-color: rgba(0, 0, 0, .75);
+  }
+
+}

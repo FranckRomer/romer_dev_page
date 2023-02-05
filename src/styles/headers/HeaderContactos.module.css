@@ -1,0 +1,41 @@
+.header_contacto_contain {
+    width: 220px;
+    height: 60px;
+    margin-left: auto;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: all .75s;
+    overflow: hidden;
+    border-radius: 16px;
+    /* border: 1px solid red; */
+}
+
+.header_contacto_contain:hover {
+    height: 510px;
+    background-color: rgba(0, 0, 0, .95);
+    border: 1px solid rgba(255, 255, 255, .2);
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    /* margin-right: 5vw; */
+}
+
+.header_contacto,
+.header_contacto_activacion {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.header_contacto:hover {
+    color: aqua;
+}
+
+.header_contacto_activacion img {
+    filter: invert(1);
+}
