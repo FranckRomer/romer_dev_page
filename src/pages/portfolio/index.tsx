@@ -36,7 +36,7 @@ const PortfolioPage = () => {
             <main className={styles.main}>
 
                 {/* //*-------------------- Home --------------------*/}
-                <section className={styles.home}>
+                <section className={styles.home} id="home">
                     <div className={styles.home_info}>
                         <div>
                             <h1 className={styles.home_info_titulo}>Francisco Romero</h1>
@@ -123,13 +123,364 @@ const PortfolioPage = () => {
                 </section>
 
                 {/* //*-------------------- Skills --------------------*/}
-                <section className={styles.skills}>
-                    <div></div>
+                <section className={styles.skills} id="About">
+                    <h1>Habilidades</h1>
+                    <hr />
+
+                    {/* //? ------- Frontend ------- */}
+                    <section className={styles.skills_Frontend}>
+                        <div className={styles.skills_info}>
+                            <h2>Frontend</h2>
+                            <p>Como desarrollador Frontend he realizado sitios usando solo Html, Css y JavaScript, sin embargo para crear aplicaciones por lo general uso herramientas como lo son React y Next js.</p>
+                            <div className={styles.skills_contain}>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/html.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Html</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/css.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Css</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/js.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>JavaScript</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/react.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>React</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/nextjs.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Next js</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.skills_img}>
+                            <Image
+                                src={"/imgs/frontend.png"}
+                                alt="Agente"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+                    </section>
+                    {/* //? ------- Backend ------- */}
+                    <section className={styles.skills_Backend}>
+                        <div className={styles.skills_img}>
+                            <Image
+                                src={"/imgs/analisis-de-los-datos.png"}
+                                alt="Agente"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+                        <div className={styles.skills_info}>
+                            <h2>Backend</h2>
+                            <p>Como desarrollador Backend en un principio lo utilice para comunicar mis dispositivos de IoT a una Base de datos como lo es MongoDb y posteriormente he creado nuevas rutas para hacer una consulta de los datos y visualizar en tiempo real en una pagina web.</p>
+                            <div className={styles.skills_contain}>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/js.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>JavaScript</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/nodejs.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Node Js</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/nest.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Nest Js</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/mongodb.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>MongoDB</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/postgres.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Postgres</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {/* //? ------- Iot ------- */}
+                    <section className={styles.skills_Iot} >
+                        <div className={styles.skills_info}>
+                            <h2>Internet of Things</h2>
+                            <p>En un principio aprendí a programar Microcontroladores (como lo son los Pic18f4580), después migre a programar en Arduino (principal mente usando el ESP32), en esta plataforma se han creado diversos proyectos, todos con la posibilidad de conectar se a internet.</p>
+                            <div className={styles.skills_contain}>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/C++.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>C++</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/arduino.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Arduino</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/microchip.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Microchip</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/raspberry.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>RaspBerry</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/http.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Http</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.skills_img}>
+                            <Image
+                                src={"/imgs/domotica.png"}
+                                alt="Agente"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+                    </section>
+                    {/* //? ------- Other ------- */}
+                    <section className={styles.skills_Other} >
+                        <div className={styles.skills_img}>
+                            <Image
+                                src={"/imgs/trabajo.png"}
+                                alt="Agente"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+                        <div className={styles.skills_info}>
+                            <h2>Otras Skills</h2>
+                            <p>Cuento con diversos conocimientos que me ayudan a desarrollar de maneras diversas como lo es conocimientos en Redes, conocimientos avanzados en Electronica, conocimientos en Inteligencia Artificial, practica con la Linea de comandos y manejo de GitHub</p>
+                            <div className={styles.skills_contain}>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/git.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Git</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/linux.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Terminal</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/matlab.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Matlab</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/python.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Python</p>
+                                </div>
+                                <div className={styles.skill}>
+                                    <Image
+                                        src={"/skills/figma.png"}
+                                        alt="Agente"
+                                        width={60}
+                                        height={60}
+                                    />
+                                    <p>Figma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
 
                 {/* //*-------------------- Projects --------------------*/}
-                <section className={styles.projects}>
-                    <div></div>
+                <section className={styles.projects} id="project">
+                    <h1>Proyectos</h1>
+                    <p>Los proyectos mas relevantes:</p>
+                    <hr />
+                    <section className={styles.project_contain}>
+
+                        {/* ------------------ */}
+                        <div className={styles.project}>
+                            <div className={styles.project_img}>
+                                <h3>Portafolio</h3>
+                                <Image
+                                    src={"/projects/portfolio.png"}
+                                    alt="Agente"
+                                    width={500}
+                                    height={300}
+                                />
+                            </div>
+                            <div className={styles.project_info}>
+                                <h2>Portfolio</h2>
+                                <p>Portafolio personal</p>
+                                <div className={styles.project_info_enlace}>
+                                    <Image
+                                        src={"/icons/enlace.png"}
+                                        alt="Agente"
+                                        width={20}
+                                        height={20}
+                                    />
+                                    <p>Ver proyecto</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ------------------ */}
+                        <div className={styles.project}>
+                            <div className={styles.project_img}>
+                                <h3>Dana</h3>
+                                <Image
+                                    src={"/projects/dana.jpeg"}
+                                    alt="Agente"
+                                    width={500}
+                                    height={300}
+                                />
+                            </div>
+                            <div className={styles.project_info}>
+                                <h2>Dana</h2>
+                                <p>Proyecto de Domotica </p>
+                                <div className={styles.project_info_enlace}>
+                                    <Image
+                                        src={"/icons/enlace.png"}
+                                        alt="Agente"
+                                        width={20}
+                                        height={20}
+                                    />
+                                    <p>Ver proyecto</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        {/* ------------------ */}
+                        <div className={styles.project}>
+                            <div className={styles.project_img}>
+                                <h3>Train</h3>
+                                <Image
+                                    src={"/projects/train.jpeg"}
+                                    alt="Agente"
+                                    width={500}
+                                    height={300}
+                                />
+                            </div>
+                            <div className={styles.project_info}>
+                                <h2>Train</h2>
+                                <p>Proycto de trasporte publico</p>
+                                <div className={styles.project_info_enlace}>
+                                    <Image
+                                        src={"/icons/enlace.png"}
+                                        alt="Agente"
+                                        width={20}
+                                        height={20}
+                                    />
+                                    <p>Ver proyecto</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </section>
+
+                    <div className={styles.allproyects}>
+                        <Link href={"/"}>
+                            <Image
+                                src={"/icons/enlace.png"}
+                                alt="Agente"
+                                width={30}
+                                height={30}
+                            />
+                            <p>Ver todos los proyectos</p>
+                        </Link>
+                    </div>
+
                 </section>
 
 

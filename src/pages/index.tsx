@@ -39,7 +39,7 @@ export default function Home() {
       <main className={styles.main}>
         {/* //? ----------------------------- */}
         <section className={styles.portada} id="home">
-          
+
 
           <div className={styles.portada_main}>
 
@@ -54,20 +54,20 @@ export default function Home() {
             </div>
 
             <div className={styles.portada_info}>
-              <div>
-                <h1 className={styles.portada_info_tituloPrin}>
-                  Desarrollo de aplicaciones web y automatización de dispositivos
-                </h1>
-                <Link href={"/contact"} className={styles.portada_info_contacto}>
-                  <Image
-                    src="/icons/contact_red.png"
-                    alt="Link a portafolio"
-                    width={95}
-                    height={95}
-                  />
-                  <p>Contacta me</p>
-                </Link>
-              </div>
+
+              <h1 className={styles.portada_info_tituloPrin}>
+                Desarrollo de aplicaciones web y automatización de dispositivos
+              </h1>
+              <Link href={"/contact"} className={styles.portada_info_contacto}>
+                <Image
+                  src="/icons/contact_red.png"
+                  alt="Link a portafolio"
+                  width={95}
+                  height={95}
+                />
+                <p>Contacta me</p>
+              </Link>
+
             </div>
 
           </div>

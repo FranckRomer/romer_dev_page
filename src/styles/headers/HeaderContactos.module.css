@@ -39,3 +39,17 @@
 .header_contacto_activacion img {
     filter: invert(1);
 }
+
+
+@media only screen and (max-width: 450px){
+    .header_contacto_contain{
+        border: 1px solid rgba(255, 255, 255, .2);
+        padding: 0;
+        width: 160px;
+    }
+    .header_contacto,
+    .header_contacto_activacion{
+        gap: .5rem;
+    }
+    
+}

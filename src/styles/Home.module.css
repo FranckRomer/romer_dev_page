@@ -29,7 +29,7 @@
 */
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -59,12 +59,12 @@
 }
 
 .portada_main {
-  height: 80vh;
+  min-height: 80vh;
   display: grid;
   gap: 1rem;
   grid-template-columns: 50% 50%;
   margin-top: 3rem;
-  /* border: 1px solid red;| */
+  /* border: 1px solid red; */
 }
 
 .portada_imgs,
@@ -75,8 +75,9 @@
   display: grid;
   margin: auto;
 }
+
 .portada_info {
-  row-gap: 3rem;
+  /* row-gap: 3rem; */
   grid-template-columns: 1fr;
 }
 
@@ -88,7 +89,7 @@
 }
 
 .portada_info_contacto {
-  width: 360px;
+  min-width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,11 +172,15 @@
   align-items: center;
   margin: auto;
 }
-.desarrollo p{
+
+.desarrollo p {
   text-align: justify;
   margin: 3rem 0;
 }
-.desarrollo_web_img, .desarrollo_responsive_img,.desarrollo_automatizacion_img {
+
+.desarrollo_web_img,
+.desarrollo_responsive_img,
+.desarrollo_automatizacion_img {
   /* border: 1px solid red; */
   display: grid;
   margin: auto;
@@ -187,36 +192,44 @@
   background: linear-gradient(90deg, #2F3F80 0%, #111111 100%);
   padding: 15vh 5rem;
 }
-.final h1{
+
+.final h1 {
   text-align: center;
 }
-.final_grid{
+
+.final_grid {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
   padding: 3rem;
   margin: 3rem;
 }
-.final_img{
+
+.final_img {
   display: grid;
   margin: auto;
 }
-.final_info{
+
+.final_info {
   display: grid;
 }
-.final_link{
+
+.final_link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.final_portfolio{
+
+.final_portfolio {
   border: 3px solid #00B7D4;
   color: #00B7D4;
   padding: 1rem 2rem;
+  margin: 1rem 0;
   border-radius: .5rem;
 }
-.final_contacto{
+
+.final_contacto {
   border: 3px solid #E57272;
   color: #E57272;
   padding: 1rem 2rem;
@@ -232,18 +245,122 @@
 
 @media only screen and (max-width: 1025px) {
   .header {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, .75);
   }
 
   .header_menu {
-      display: none;
+    display: none;
+  }
+
+  .portada_main,
+  .datos,
+  .desarrollo_web,
+  .desarrollo_responsive,
+  .desarrollo_automatizacion,
+  .final_grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 450) {
-  .header_contacto_contain {
-      width: 120px;
-      background-color: rgba(0, 0, 0, .75);
+@media only screen and (max-width: 770px) {
+  .header {
+    padding: 1rem .5rem;
   }
 
+  .header_contacto_contain {
+    width: 120px;
+    background-color: rgba(0, 0, 0, .75);
+  }
+
+  .main img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .portada_info_contacto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .final_link img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .final_grid {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .desarrollo,
+  .datos,
+  .final {
+    padding: 1rem;
+  }
+
+  .desarrollo_web,
+  .desarrollo_responsive,
+  .desarrollo_automatizacion {
+    /* width: 90%; */
+    padding: 1rem;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    padding-bottom: 4rem;
+  }
+
+  .datos_info,
+  .desarrollo_web_info,
+  .desarrollo_responsive_info,
+  .desarrollo_automatizacion_info{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  /*  */
+  .header {
+    padding: 1rem .5rem;
+  }
+
+  .header_contacto_contain {
+    width: 120px;
+    background-color: rgba(0, 0, 0, .75);
+  }
+  .main img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .portada_info_contacto img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .final_link img {
+    width: 30px;
+    height: 30px;
+  }
+  .main h1{
+    font-size: 34px;
+  }
+  .main h2{
+    font-size: 24px;
+  }
+  .main p{
+    font-size: 16px;
+  }
+  .portada{
+    padding: 0 1rem;
+  }
+  /* .portada h1{
+    text-align: start;
+  } */
+  .portada_imgs img{
+    display: none;
+  }
+  .portada_info_contacto{
+    min-width: 220px;
+  }
 }
